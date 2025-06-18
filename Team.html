@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div class="container py-5">
+    <div class="row">
+      <!-- Member 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member-card">
+          <img src="person1.jpg" alt="Person 1">
+          <h2 class="text-white">John Doe</h2>
+          <p class="text-white">Position: Developer</p>
+        </div>
+      </div>
+      <!-- Member 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member-card">
+          <img src="person2.jpg" alt="Person 2">
+          <h2 class="text-white">Jane Smith</h2>
+          <p class="text-white">Position: Designer</p>
+        </div>
+      </div>
+      <!-- Member 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member-card">
+          <img src="person3.jpg" alt="Person 3">
+          <h2 class="text-white">Michael Johnson</h2>
+          <p class="text-white">Position: Manager</p>
+        </div>
+      </div>
+      <!-- Member 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member-card">
+          <img src="person4.jpg" alt="Person 4">
+          <h2 class="text-white">Emily Brown</h2>
+          <p class="text-white">Position: Marketer</p>
+        </div>
+      </div>
+      <!-- Member 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="member-card">
+          <img src="person5.jpg" alt="Person 5">
+          <h2 class="text-white">Alex Lee</h2>
+          <p class="text-white">Position: Analyst</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Custom CSS */
+    .member-card {
+      background-color: #18c0c3;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .member-card:hover {
+      transform: scale(1.05);
+    }
+    .member-card img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+{% endblock %}
